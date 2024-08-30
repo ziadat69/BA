@@ -1,7 +1,7 @@
 # Multipath Routing with Link Weight and Segment Optimization
 
 ## Overview 
-The code has been the basis for computational evaluations within the bachelor thesis '**Exploring Traffic Engineering - Multipath Routing with Link Weight and Segment Optimization**'.
+The code has been the basis for computational evaluations within the bachelor thesis '**- Multipath Routing with Link Weight and Segment Optimization**'.
 This repository contains all implemented algorithms, traffic and topology generators. Additionally, the raw results (JSON), and the plotting script used for the result figures from the thesis are provided.
 The basis for this repository is the repository [TE_SR_WAN_simulation](https://github.com/tfenz/TE_SR_WAN_simulation), following the publication '**Traffic Engineering with Joint Link Weight and Segment Optimization**'.
 
