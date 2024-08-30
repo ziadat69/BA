@@ -1,4 +1,4 @@
-# Exploring Traffic Engineering - Multipath Routing with Link Weight and Segment Optimization
+# Multipath Routing with Link Weight and Segment Optimization
 
 ## Overview 
 The code has been the basis for computational evaluations within the bachelor thesis '**Exploring Traffic Engineering - Multipath Routing with Link Weight and Segment Optimization**'.
