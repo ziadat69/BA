@@ -22,7 +22,7 @@ For measuring the per-interface throughput, we used a small python script, which
 
 ### Files
 * `Joint.topo.sh`
-* `Weights.topo.sh`
+* `idealwaypoint.topo.sh`
 * `throughput.py`
 
 The `*.topo.sh` files contain the experiments. Of course, you always only need one at a time.
