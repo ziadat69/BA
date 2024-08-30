@@ -252,7 +252,7 @@ def many_topologies_synthetic_demands1():
          [""]),
           
         ("heur_ospf_weights", "",
-         ["idealwaypoint_optimization", "demand_first_waypoints", "binary_search_adaptive",
+         ["", "demand_first_waypoints", "binary_search_adaptive",
           "waypoint_multipath_two_phase_optimization", "waypoint_multipath_adaptive"])
     ]
     topology_provider = "snd_lib"
