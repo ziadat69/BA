@@ -317,13 +317,13 @@ def snd_real_demands():
     """ Tests for real demands on abilene and geant """
     algorithms = [
         ("uniform_weights", "",
-         ["", "demand_first_waypoints", "binary_search_adaptive", "idealwaypoint_optimization",
+         ["", "demand_first_waypoints", "binary_search_adaptive", "idealwaypoint_optimization2",
           "waypoint_multipath_two_phase_optimization", "waypoint_multipath_adaptive"]),
         ("inverse_capacity", "",
-         ["", "demand_first_waypoints", "binary_search_adaptive", "idealwaypoint_optimization",
+         ["", "demand_first_waypoints", "binary_search_adaptive", "idealwaypoint_optimization2",
           "waypoint_multipath_two_phase_optimization", "waypoint_multipath_adaptive"]),
           
-        ("idealwaypoint_optimization", "",
+        ("idealwaypoint_optimization2", "",
          [""]),
           
           
@@ -358,4 +358,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
