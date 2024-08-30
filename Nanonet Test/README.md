@@ -77,9 +77,7 @@ The output will be:
 
 For plotting, you can use `gen_boxplot.py`, which reads the CSV file and generates a boxplot (requires `matplotlib` and `seaborn`).
 
-This will create a boxplot like this:
 
-![Results: Joint vs. LWO](imgs/nanonet_plot_10x.png)
 
 ### Helper tools for evaluation
 * `nut2csv`<br>
