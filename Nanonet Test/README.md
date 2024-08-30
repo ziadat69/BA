@@ -1,4 +1,4 @@
-# Traffic Engineering with Joint Link Weight and Segment Optimization &ndash; Source code for test bed evaluation
+# Multipath Routing with Link Weight and Segment Optimization ; Source code for test bed evaluation
 ## Overview
 
 The Test has been the basis for computational evaluations within the bachelor thesis '**- Multipath Routing with Link Weight 
