@@ -49,8 +49,8 @@ To install Open vSwitch on Ubuntu, follow these steps:
 1. **Clone the Repository**:
    
     ```bash
-    git clone <repository_url>
-    cd <repository_folder>
+    git clone <git@github.com:ziadat69/thesis-BA.git>
+    cd <Mininet Test>
     ```
 
 2. **Execute the Mininet Script**:
