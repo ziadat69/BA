@@ -1,0 +1,28 @@
+{
+  "demands": [
+    {
+      "src": 0,
+      "dst": 4,
+      "demand_size": 4,
+      "waypoint_chance_map": {
+        "4": 0.5
+      }
+    }
+  ],
+  "links": [
+    {"i": 1, "j": 2, "capacity": 4},
+    {"i": 2, "j": 1, "capacity": 4},
+    {"i": 1, "j": 3, "capacity": 3},
+    {"i": 3, "j": 1, "capacity": 3},
+    {"i": 2, "j": 4, "capacity": 5},
+    {"i": 4, "j": 2, "capacity": 5},
+    {"i": 3, "j": 4, "capacity": 2},
+    {"i": 4, "j": 3, "capacity": 2},
+    {"i": 4, "j": 5, "capacity": 5},
+    {"i": 5, "j": 4, "capacity": 2},
+    {"i": 5, "j": 6, "capacity": 2},
+    {"i": 6, "j": 5, "capacity": 2}
+  ],
+  "max_link_utilization": 2.0
+}
+
