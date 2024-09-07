@@ -1,39 +1,35 @@
 
 
-# README
+## Overview
 
-## Übersicht
+This repository contains the implementation and evaluation of various network optimization algorithms developed as part of my bachelor thesis. The algorithms were extensively tested to assess their performance in realistic network scenarios. The tests were conducted using different tools and datasets to ensure reliable results.
 
-Dieses Repository enthält die Implementierung und Evaluierung verschiedener Netzwerkoptimierungsalgorithmen, die im Rahmen meiner Bachelorarbeit entwickelt wurden. Die Algorithmen wurden umfassend getestet, um ihre Leistung in realistischen Netzwerkszenarien zu bewerten. Die Tests wurden mit verschiedenen Tools und Datensätzen durchgeführt, um zuverlässige Ergebnisse zu erzielen.
-
-## Testumgebungen
+## Testing Environments
 
 ### 1. SNDLib / TopologyZoo ( in BA-1 -File)
- 
-Für die Simulationen wurden reale Netzwerktopologien aus SNDLib und TopologyZoo verwendet. Diese Quellen bieten eine Vielzahl von Netzwerkarchitekturen, die es ermöglichen, die Algorithmen in realistischen Szenarien zu testen. Jeder Algorithmus wurde auf Graphenebene evaluiert, wobei Python und die Bibliotheken NetworkX und NetworKit zur Berechnung von Netzwerkmetriken und kürzesten Pfaden verwendet wurden.
 
-- **Verkehrserzeugung:** Der Verkehr wurde mit der MCF-Methode erstellt. Hierbei wurden zufällig 20% der Verbindungen gewählt und die Nachfrage so angepasst, dass die Auslastung der Links immer bei 100% liegt. Dies ermöglichte eine realistische Testung der Algorithmen.
-- **Datensätze:** Jeder Algorithmus wurde mit 10 verschiedenen Datensätzen getestet, um zuverlässige Ergebnisse zu erhalten.
+For simulations, real network topologies from SNDLib and TopologyZoo were used. These sources provide a variety of network architectures, allowing the algorithms to be tested in realistic scenarios. Each algorithm was evaluated at the graph level, with Python and the NetworkX and NetworKit libraries used for calculating network metrics and shortest paths.
 
-### 2. Mininet o ( in Mininet Test -File)
+- **Traffic Generation:** Traffic was generated using the MCF method. Here, 20% of the connections were chosen randomly, and the demand was adjusted to ensure that the link utilization was always at 100%. This allowed for realistic testing of the algorithms.
+- **Datasets:** Each algorithm was tested with 10 different datasets to obtain reliable results.
 
-Mininet ist ein Open-Source-Tool zur Simulation von Netzwerken. Es ermöglicht das Erstellen von virtuellen Netzwerken mit Hosts, Switches und Links auf einer einzigen Maschine. Verschiedene Netzwerktopologien können erstellt werden, um die Algorithmen zu testen.
+### 2. Mininet  o ( in Mininet Test -File)
 
-- **Algorithmus-Test:** Wir überprüfen den Algorithmus „Dynamisches Routing mit Ausfallschutz 4“ in Mininet, um die Stabilität der Verbindung in einem virtuellen Netzwerk zu testen. Verschiedene Szenarien, wie der Ausfall von Verbindungen, werden simuliert. Dazu verwenden wir vier Knoten im Netzwerk und senden kontinuierlich Daten von Knoten A zu Knoten D. Ein zusätzlicher Knoten wird hinzugefügt, um die Verbindung aufrechtzuerhalten und den Datenfluss bei einem Knoten-Ausfall sicherzustellen.
+Mininet is an open-source tool for network simulation. It allows the creation of virtual networks with hosts, switches, and links on a single machine. Various network topologies can be created to test the algorithms.
+
+- **Algorithm Test:** We test the "Dynamic Routing with Failover 4" algorithm in Mininet to assess connection stability in a virtual network. Different scenarios, such as connection failures, are simulated. Four nodes are used in the network, and continuous data is sent from node A to node D. An additional node is added to maintain the connection and ensure data flow in case of a node failure.
 
 ### 3. Nanonet o ( in Nanonet Test -File)
 
-Nanonet ist ein virtualisiertes Netzwerkumgebungskonzept, das auf Mininet basiert. Es ermöglicht die Simulation von Netzwerken durch die Nutzung von Netzwerk-Namensräumen (Namespaces) im Linux-Kernel und die Schaffung von virtuellen Verbindungen zwischen diesen Namensräumen.
+Nanonet is a virtualized network environment concept based on Mininet. It allows for network simulation through the use of network namespaces in the Linux kernel and the creation of (virtual) connections between these namespaces.
 
-- **Algorithmus-Test:** Der idealwaypointOp-Algorithmus wird in einem Szenario mit vier Anforderungen von den Knoten 11, 12, 13 und 14 getestet. Jeder Knoten sendet einen Flow, der gleichzeitig startet und 300 Sekunden dauert, um Knoten 4 zu erreichen. Das Netzwerk besteht aus neun Knoten plus einem zusätzlichen Knoten (Knoten 5). Ziel des Tests ist es, herauszufinden, wie gut der Algorithmus die Netzwerkressourcen nutzt und wie effektiv die Links ausgelastet werden. Die Ergebnisse sollen zeigen, wie der Algorithmus unter realistischen Bedingungen funktioniert und optimiert werden kann.
-
-
+- **Algorithm Test:** The idealwaypointOp algorithm is tested in a scenario with four demands from nodes 11, 12, 13, and 14. Each node sends a flow that starts simultaneously and lasts for 300 seconds, aiming to reach node 4. The network consists of nine nodes plus an additional node (node 5). The goal of the test is to determine how well the algorithm utilizes network resources and how effectively the links are utilized. The results will show how the algorithm performs and can be optimized under realistic conditions.
 
 
-## Verwendete Tools
+## Tools Used
 
-- **Python:** Zur Implementierung und Analyse der Algorithmen.
-- **NetworkX und NetworKit:** Zur Berechnung von Netzwerkmetriken und kürzesten Pfaden.
-- **Mininet:** Zur Simulation von virtuellen Netzwerken.
-- **Nanonet:** Zur weiteren Simulation und Optimierung von Netzwerkressourcen.
+- **Python:** For implementing and analyzing the algorithms.
+- **NetworkX and NetworKit:** For calculating network metrics and shortest paths.
+- **Mininet:** For simulating virtual networks.
+- **Nanonet:** For further simulation and optimization of network resources.
 
