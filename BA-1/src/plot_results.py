@@ -333,7 +333,7 @@ def prepare_data_and_plot(df, title, plot_type):
         df_x = df[df["algorithm_complete"] == algo]
         mean = np.mean(df_x["objective"].values.mean())
         print(f'{algo:>20}: {mean}')
-    print(  df_xs)
+    print(  df_x)
     
 
     # plot files
